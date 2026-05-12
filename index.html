@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>汪蕾 | 前端开发工程师</title>
+    <meta
+      name="description"
+      content="汪蕾的个人作品集网站，聚焦 Vue、多端开发、可视化与 AI 前端实践。"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23d55d3f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' font-size='26' font-family='Arial' fill='white'%3EWL%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#hero">WL / Portfolio</a>
+        <nav class="nav">
+          <a href="#projects">项目</a>
+          <a href="#experience">经历</a>
+          <a href="#contact">联系</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero section" id="hero">
+          <div class="hero-copy reveal">
+            <div class="hero-badge-stack" aria-hidden="true">
+              <div class="hero-monogram">WL</div>
+              <div class="hero-notes">
+                <span>Shanghai Based</span>
+                <span>Vue Specialist</span>
+                <span>AI Workflow Ready</span>
+              </div>
+            </div>
+            <p class="eyebrow">Frontend Engineer · AI-minded Builder</p>
+            <h1>
+              汪蕾
+              <span>把复杂业务做成清晰、稳定、可维护的前端产品。</span>
+            </h1>
+            <p class="intro">
+              5 年前端开发经验，长期负责 Vue 生态、多端应用、数据可视化与业务组件体系建设。
+              目前在上海，聚焦前端开发与 AI 前端方向。
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="mailto:2059776789@qq.com">联系我</a>
+              <a class="button secondary" href="#projects">查看项目</a>
+            </div>
+          </div>
+
+          <div class="hero-grid reveal">
+            <!-- 首页信息卡片集中放在这里，后续改内容时只需要维护对应 article -->
+            <article class="panel panel-accent">
+              <p class="panel-label">Current Focus</p>
+              <h2>Vue3 / TypeScript / 多端交付 / AI 前端</h2>
+              <p>
+                熟悉从后台管理系统到小程序、H5、大屏的完整交付链路，关注组件抽象、性能优化和工程质量。
+              </p>
+            </article>
+            <article class="panel">
+              <p class="panel-label">Location</p>
+              <h3>上海</h3>
+              <p>在职，岗位方向为前端开发 / AI 前端。</p>
+            </article>
+            <article class="panel">
+              <p class="panel-label">Strength</p>
+              <h3>组件化与复杂业务落地</h3>
+              <p>擅长表单、表格、上传、筛选、权限等高频业务模块沉淀。</p>
+            </article>
+            <article class="panel metric-card">
+              <p class="metric">5Y</p>
+              <p>Vue 开发经验</p>
+            </article>
+            <article class="panel metric-card">
+              <p class="metric">0→1</p>
+              <p>多次参与项目搭建</p>
+            </article>
+            <article class="panel metric-card">
+              <p class="metric">PC / H5 / 小程序 / 大屏</p>
+              <p>具备多端开发视野</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section highlights">
+          <div class="section-heading reveal">
+            <p class="eyebrow">What I Do</p>
+            <h2>我更擅长把“业务复杂度”变成“可复用能力”</h2>
+          </div>
+          <div class="highlight-grid">
+            <article class="panel reveal">
+              <h3>业务组件沉淀</h3>
+              <p>
+                在 PrimeVue、Element Plus、uni-app 等生态下持续封装高频业务组件，减少重复开发，提升团队协作效率。
+              </p>
+            </article>
+            <article class="panel reveal">
+              <h3>性能与体验优化</h3>
+              <p>
+                熟悉懒加载、代码分割、虚拟滚动、keep-alive、响应式适配等手段，能兼顾复杂系统的性能与交互体验。
+              </p>
+            </article>
+            <article class="panel reveal">
+              <h3>AI 前端实践</h3>
+              <p>
+                了解 LLM API 接入、流式输出、Markdown 渲染、Prompt 调试和 RAG 基础概念，日常结合 AI 工具提升交付效率。
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="projects">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Selected Work</p>
+            <h2>项目精选</h2>
+          </div>
+          <div class="project-list">
+            <!-- 项目卡片保持统一结构，后续新增项目可直接复制 article.project-card -->
+            <article class="project-card reveal">
+              <div class="project-index">01</div>
+              <div class="project-body">
+                <h3>物联网安全运维平台</h3>
+                <p>
+                  面向医院的智慧运维平台，覆盖 PC 后台、微信小程序与数据可视化大屏，包含空间管理、报警管理、报修流程与统计报表。
+                </p>
+                <ul class="tag-list">
+                  <li>Vue3</li>
+                  <li>TypeScript</li>
+                  <li>PrimeVue</li>
+                  <li>Pinia</li>
+                  <li>ECharts</li>
+                </ul>
+              </div>
+              <div class="project-note">
+                <p>封装通用业务组件，优化权限控制与加载性能，支撑复杂运维场景持续迭代。</p>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-index">02</div>
+              <div class="project-body">
+                <h3>昆明地铁接触轨管理平台</h3>
+                <p>
+                  为地铁运营公司打造的接触轨智能管理平台，覆盖 PC 管理系统与移动端 H5，支持病害分析、设备检修、状态评价等核心流程。
+                </p>
+                <ul class="tag-list">
+                  <li>Vue2</li>
+                  <li>Element UI</li>
+                  <li>Vant UI</li>
+                  <li>ECharts</li>
+                </ul>
+              </div>
+              <div class="project-note">
+                <p>重点负责图表可视化、通用组件封装、权限管理与大数据量场景的性能优化。</p>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-index">03</div>
+              <div class="project-body">
+                <h3>八诀 ERP 与供应链商城</h3>
+                <p>
+                  围绕家纺行业 ERP、批发商城、微商城和内部协同平台，负责后台系统、多端商城与小程序的功能开发和交互优化。
+                </p>
+                <ul class="tag-list">
+                  <li>Vue3</li>
+                  <li>Element Plus</li>
+                  <li>uni-app</li>
+                  <li>uView</li>
+                </ul>
+              </div>
+              <div class="project-note">
+                <p>沉淀多校验输入框、上传、拖拽表格、导出能力，支持多角色权限与多端代码复用。</p>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-index">04</div>
+              <div class="project-body">
+                <h3>掌上东航 / 跑跑网仓</h3>
+                <p>
+                  负责企业内部移动端应用与后台管理系统开发，覆盖审批流程、实时监控、货运业务管理等多类企业场景。
+                </p>
+                <ul class="tag-list">
+                  <li>Vue2</li>
+                  <li>Vant</li>
+                  <li>Vuex</li>
+                  <li>Webpack</li>
+                </ul>
+              </div>
+              <div class="project-note">
+                <p>兼顾移动端适配、状态管理、缓存策略与打包优化，保障复杂业务稳定运行。</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section skills-experience">
+          <div class="skills-panel panel reveal">
+            <p class="eyebrow">Core Stack</p>
+            <h2>技术关键词</h2>
+            <div class="skill-cloud">
+              <span>Vue2 / Vue3</span>
+              <span>TypeScript</span>
+              <span>JavaScript ES6+</span>
+              <span>Pinia / Vuex</span>
+              <span>PrimeVue</span>
+              <span>Element Plus</span>
+              <span>uni-app</span>
+              <span>微信小程序</span>
+              <span>ECharts / V-Charts</span>
+              <span>Webpack / Vite</span>
+              <span>Less / Sass</span>
+              <span>AI Coding Workflow</span>
+            </div>
+          </div>
+
+          <div class="experience-panel reveal" id="experience">
+            <div class="section-heading">
+              <p class="eyebrow">Timeline</p>
+              <h2>工作经历</h2>
+            </div>
+
+            <!-- 时间线节点用 data-period 维护时间，方便后续替换或新增 -->
+            <article class="timeline-item">
+              <div class="timeline-period">2025.03 - 至今</div>
+              <div class="timeline-content">
+                <h3>上海隆智鸿信息科技有限公司</h3>
+                <p>前端开发工程师</p>
+                <p>
+                  负责物联网安全运维平台、批发商城多端和小程序组件开发，主导通用业务组件沉淀与性能优化。
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-period">2023.02 - 2024.09</div>
+              <div class="timeline-content">
+                <h3>上海八诀信息科技有限公司</h3>
+                <p>前端开发工程师</p>
+                <p>
+                  负责 ERP、供应链商城、微商城和协同平台建设，覆盖后台系统、小程序、App 与 PC 商城多端交付。
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-period">2021.02 - 2022.11</div>
+              <div class="timeline-content">
+                <h3>上海新致股份有限公司</h3>
+                <p>前端开发工程师</p>
+                <p>
+                  负责企业移动端与后台系统开发，参与实时监控、审批流程、货运业务等项目的交互实现与维护。
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section contact-section reveal" id="contact">
+          <div class="contact-copy">
+            <p class="eyebrow">Contact</p>
+            <h2>如果你需要一位能兼顾业务、体验和维护成本的前端工程师，可以联系我。</h2>
+          </div>
+          <div class="contact-meta">
+            <a href="mailto:2059776789@qq.com">2059776789@qq.com</a>
+            <p>上海 · 本科 · 5 年经验</p>
+            <p>电话：13865667915</p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>© <span id="year"></span> 汪蕾. Built for a portfolio that can keep evolving.</p>
+      </footer>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

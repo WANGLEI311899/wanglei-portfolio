@@ -10,7 +10,7 @@
     />
     <link
       rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23d55d3f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' font-size='26' font-family='Arial' fill='white'%3EWL%3C/text%3E%3C/svg%3E"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23de6843'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' font-size='26' font-family='Arial' fill='white'%3EWL%3C/text%3E%3C/svg%3E"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,6 +21,14 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <div class="ambient" aria-hidden="true">
+      <div class="ambient-blob blob-one"></div>
+      <div class="ambient-blob blob-two"></div>
+      <div class="ambient-grid"></div>
+      <div class="ambient-spotlight"></div>
+      <div class="ambient-noise"></div>
+    </div>
+
     <div class="page-shell">
       <header class="topbar">
         <a class="brand" href="#hero">WL / Portfolio</a>
@@ -33,58 +41,75 @@
 
       <main>
         <section class="hero section" id="hero">
-          <div class="hero-copy reveal">
-            <div class="hero-badge-stack" aria-hidden="true">
-              <div class="hero-monogram">WL</div>
+          <div class="hero-copy reveal" data-parallax="0.08">
+            <div class="hero-badge-stack">
+              <div class="hero-monogram" data-float="slow">WL</div>
               <div class="hero-notes">
                 <span>Shanghai Based</span>
                 <span>Vue Specialist</span>
                 <span>AI Workflow Ready</span>
               </div>
             </div>
-            <p class="eyebrow">Frontend Engineer · AI-minded Builder</p>
-            <h1>
-              汪蕾
-              <span>把复杂业务做成清晰、稳定、可维护的前端产品。</span>
-            </h1>
-            <p class="intro">
-              5 年前端开发经验，长期负责 Vue 生态、多端应用、数据可视化与业务组件体系建设。
-              目前在上海，聚焦前端开发与 AI 前端方向。
-            </p>
+
+            <div class="hero-copy-main">
+              <p class="eyebrow">Frontend Engineer · AI-minded Builder</p>
+              <h1>
+                汪蕾
+                <span>把复杂业务做成清晰、稳定、可维护的前端产品。</span>
+              </h1>
+              <p class="intro">
+                5 年前端开发经验，长期负责 Vue 生态、多端应用、数据可视化与业务组件体系建设。
+                目前在上海，聚焦前端开发与 AI 前端方向。
+              </p>
+            </div>
+
             <div class="hero-actions">
               <a class="button primary" href="mailto:2059776789@qq.com">联系我</a>
               <a class="button secondary" href="#projects">查看项目</a>
             </div>
           </div>
 
-          <div class="hero-grid reveal">
-            <!-- 首页信息卡片集中放在这里，后续改内容时只需要维护对应 article -->
-            <article class="panel panel-accent">
+          <div class="hero-stage reveal" data-parallax="0.14">
+            <!-- 首屏右侧用多层浮动卡片制造类似 inkdrop 的“界面漂浮感” -->
+            <div class="stage-panel stage-core" data-tilt data-float="medium">
               <p class="panel-label">Current Focus</p>
               <h2>Vue3 / TypeScript / 多端交付 / AI 前端</h2>
               <p>
                 熟悉从后台管理系统到小程序、H5、大屏的完整交付链路，关注组件抽象、性能优化和工程质量。
               </p>
-            </article>
-            <article class="panel">
+              <div class="signal-row">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+
+            <div class="stage-orbit orbit-one" data-float="slow"></div>
+            <div class="stage-orbit orbit-two" data-float="medium"></div>
+
+            <article class="stage-card mini-card one" data-tilt data-float="fast">
               <p class="panel-label">Location</p>
               <h3>上海</h3>
-              <p>在职，岗位方向为前端开发 / AI 前端。</p>
+              <p>在职，方向为前端开发 / AI 前端。</p>
             </article>
-            <article class="panel">
+
+            <article class="stage-card mini-card two" data-tilt data-float="slow">
               <p class="panel-label">Strength</p>
               <h3>组件化与复杂业务落地</h3>
               <p>擅长表单、表格、上传、筛选、权限等高频业务模块沉淀。</p>
             </article>
-            <article class="panel metric-card">
+
+            <article class="stage-card metric-card three" data-tilt data-float="medium">
               <p class="metric">5Y</p>
               <p>Vue 开发经验</p>
             </article>
-            <article class="panel metric-card">
+
+            <article class="stage-card metric-card four" data-tilt data-float="fast">
               <p class="metric">0→1</p>
               <p>多次参与项目搭建</p>
             </article>
-            <article class="panel metric-card">
+
+            <article class="stage-card metric-card five" data-tilt data-float="slow">
               <p class="metric">PC / H5 / 小程序 / 大屏</p>
               <p>具备多端开发视野</p>
             </article>
@@ -92,24 +117,25 @@
         </section>
 
         <section class="section highlights">
-          <div class="section-heading reveal">
+          <div class="section-heading reveal" data-parallax="0.04">
             <p class="eyebrow">What I Do</p>
             <h2>我更擅长把“业务复杂度”变成“可复用能力”</h2>
           </div>
+
           <div class="highlight-grid">
-            <article class="panel reveal">
+            <article class="panel reveal" data-tilt>
               <h3>业务组件沉淀</h3>
               <p>
                 在 PrimeVue、Element Plus、uni-app 等生态下持续封装高频业务组件，减少重复开发，提升团队协作效率。
               </p>
             </article>
-            <article class="panel reveal">
+            <article class="panel reveal" data-tilt>
               <h3>性能与体验优化</h3>
               <p>
                 熟悉懒加载、代码分割、虚拟滚动、keep-alive、响应式适配等手段，能兼顾复杂系统的性能与交互体验。
               </p>
             </article>
-            <article class="panel reveal">
+            <article class="panel reveal" data-tilt>
               <h3>AI 前端实践</h3>
               <p>
                 了解 LLM API 接入、流式输出、Markdown 渲染、Prompt 调试和 RAG 基础概念，日常结合 AI 工具提升交付效率。
@@ -119,13 +145,13 @@
         </section>
 
         <section class="section" id="projects">
-          <div class="section-heading reveal">
+          <div class="section-heading reveal" data-parallax="0.03">
             <p class="eyebrow">Selected Work</p>
             <h2>项目精选</h2>
           </div>
+
           <div class="project-list">
-            <!-- 项目卡片保持统一结构，后续新增项目可直接复制 article.project-card -->
-            <article class="project-card reveal">
+            <article class="project-card reveal" data-tilt>
               <div class="project-index">01</div>
               <div class="project-body">
                 <h3>物联网安全运维平台</h3>
@@ -145,7 +171,7 @@
               </div>
             </article>
 
-            <article class="project-card reveal">
+            <article class="project-card reveal" data-tilt>
               <div class="project-index">02</div>
               <div class="project-body">
                 <h3>昆明地铁接触轨管理平台</h3>
@@ -164,7 +190,7 @@
               </div>
             </article>
 
-            <article class="project-card reveal">
+            <article class="project-card reveal" data-tilt>
               <div class="project-index">03</div>
               <div class="project-body">
                 <h3>八诀 ERP 与供应链商城</h3>
@@ -183,7 +209,7 @@
               </div>
             </article>
 
-            <article class="project-card reveal">
+            <article class="project-card reveal" data-tilt>
               <div class="project-index">04</div>
               <div class="project-body">
                 <h3>掌上东航 / 跑跑网仓</h3>
@@ -205,7 +231,7 @@
         </section>
 
         <section class="section skills-experience">
-          <div class="skills-panel panel reveal">
+          <div class="skills-panel panel reveal" data-tilt>
             <p class="eyebrow">Core Stack</p>
             <h2>技术关键词</h2>
             <div class="skill-cloud">
@@ -224,13 +250,12 @@
             </div>
           </div>
 
-          <div class="experience-panel reveal" id="experience">
+          <div class="experience-panel reveal" id="experience" data-parallax="0.03">
             <div class="section-heading">
               <p class="eyebrow">Timeline</p>
               <h2>工作经历</h2>
             </div>
 
-            <!-- 时间线节点用 data-period 维护时间，方便后续替换或新增 -->
             <article class="timeline-item">
               <div class="timeline-period">2025.03 - 至今</div>
               <div class="timeline-content">
@@ -266,7 +291,7 @@
           </div>
         </section>
 
-        <section class="section contact-section reveal" id="contact">
+        <section class="section contact-section reveal" id="contact" data-tilt>
           <div class="contact-copy">
             <p class="eyebrow">Contact</p>
             <h2>如果你需要一位能兼顾业务、体验和维护成本的前端工程师，可以联系我。</h2>

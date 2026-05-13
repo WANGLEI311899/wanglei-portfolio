@@ -415,8 +415,31 @@ a {
 .hero-stage {
   position: relative;
   min-height: 820px;
+  overflow: hidden;
   transform: translateY(var(--hero-shift));
   perspective: 1600px;
+}
+
+.hero-canvas,
+.stage-wireframe-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.hero-canvas {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.92;
+}
+
+.stage-wireframe-glow {
+  z-index: 1;
+  background:
+    radial-gradient(circle at 74% 28%, rgba(121, 213, 255, 0.18), transparent 24%),
+    radial-gradient(circle at 38% 78%, rgba(255, 133, 89, 0.12), transparent 22%);
+  filter: blur(22px);
 }
 
 .stage-panel,
@@ -426,6 +449,7 @@ a {
   border-radius: var(--radius-lg);
   transform-style: preserve-3d;
   transition: transform 260ms ease, border-color 260ms ease, box-shadow 260ms ease;
+  z-index: 3;
 }
 
 .stage-panel:hover,
@@ -556,6 +580,7 @@ a {
   position: absolute;
   border: 1px solid rgba(255, 234, 223, 0.11);
   border-radius: 50%;
+  z-index: 2;
 }
 
 .orbit-one {
@@ -579,6 +604,7 @@ a {
   opacity: 0.72;
   transform-origin: left center;
   animation: beamPulse 4s ease-in-out infinite;
+  z-index: 2;
 }
 
 .beam-one {
@@ -1008,6 +1034,11 @@ a {
     width: auto;
     min-height: auto;
     transform: none !important;
+  }
+
+  .hero-canvas,
+  .stage-wireframe-glow {
+    inset: -4%;
   }
 
   .mini-card,

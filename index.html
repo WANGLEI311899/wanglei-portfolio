@@ -10,7 +10,7 @@
     />
     <link
       rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23de6843'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' font-size='26' font-family='Arial' fill='white'%3EWL%3C/text%3E%3C/svg%3E"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ff7e57'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' font-size='26' font-family='Arial' fill='white'%3EWL%3C/text%3E%3C/svg%3E"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,10 +22,11 @@
   </head>
   <body>
     <div class="ambient" aria-hidden="true">
-      <div class="ambient-blob blob-one"></div>
-      <div class="ambient-blob blob-two"></div>
+      <div class="ambient-aurora aurora-one"></div>
+      <div class="ambient-aurora aurora-two"></div>
       <div class="ambient-grid"></div>
       <div class="ambient-spotlight"></div>
+      <div class="ambient-rings"></div>
       <div class="ambient-noise"></div>
     </div>
 
@@ -41,7 +42,12 @@
 
       <main>
         <section class="hero section" id="hero">
-          <div class="hero-copy reveal" data-parallax="0.08">
+          <div class="hero-copy reveal" data-parallax="0.06">
+            <div class="hero-status">
+              <span class="status-pill">Available for Shanghai Opportunities</span>
+              <span class="status-note">Vue / AI Frontend / Multi-platform</span>
+            </div>
+
             <div class="hero-badge-stack">
               <div class="hero-monogram" data-float="slow">WL</div>
               <div class="hero-notes">
@@ -55,7 +61,7 @@
               <p class="eyebrow">Frontend Engineer · AI-minded Builder</p>
               <h1>
                 汪蕾
-                <span>把复杂业务做成清晰、稳定、可维护的前端产品。</span>
+                <span>把复杂业务做成清晰、稳定、可维护，又足够有表现力的前端产品。</span>
               </h1>
               <p class="intro">
                 5 年前端开发经验，长期负责 Vue 生态、多端应用、数据可视化与业务组件体系建设。
@@ -69,23 +75,44 @@
             </div>
           </div>
 
-          <div class="hero-stage reveal" data-parallax="0.14">
-            <!-- 首屏右侧用多层浮动卡片制造类似 inkdrop 的“界面漂浮感” -->
+          <div class="hero-stage reveal" data-parallax="0.12">
+            <!-- 首屏右侧是一个更偏展示型的“控制台舞台”，让页面在第一屏就有记忆点 -->
             <div class="stage-panel stage-core" data-tilt data-float="medium">
-              <p class="panel-label">Current Focus</p>
+              <div class="stage-header">
+                <div class="signal-row">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <p class="panel-label">Current Focus</p>
+              </div>
               <h2>Vue3 / TypeScript / 多端交付 / AI 前端</h2>
               <p>
                 熟悉从后台管理系统到小程序、H5、大屏的完整交付链路，关注组件抽象、性能优化和工程质量。
               </p>
-              <div class="signal-row">
-                <span></span>
-                <span></span>
-                <span></span>
+              <div class="stage-meter">
+                <span>Build Quality 92%</span>
+                <span>DX 88%</span>
+                <span>Performance 86%</span>
               </div>
+            </div>
+
+            <div class="stage-panel stage-console" data-tilt data-float="fast">
+              <div class="console-head">
+                <p class="panel-label">Live Build Feed</p>
+                <span class="console-tag">online</span>
+              </div>
+              <ul class="console-list">
+                <li><span>01</span> 业务组件沉淀：表单 / 表格 / 上传 / 筛选</li>
+                <li><span>02</span> 多端交付：PC / H5 / 小程序 / 大屏</li>
+                <li><span>03</span> AI 工作流：Prompt / 流式输出 / Markdown 渲染</li>
+              </ul>
             </div>
 
             <div class="stage-orbit orbit-one" data-float="slow"></div>
             <div class="stage-orbit orbit-two" data-float="medium"></div>
+            <div class="stage-beam beam-one"></div>
+            <div class="stage-beam beam-two"></div>
 
             <article class="stage-card mini-card one" data-tilt data-float="fast">
               <p class="panel-label">Location</p>
@@ -117,7 +144,7 @@
         </section>
 
         <section class="section highlights">
-          <div class="section-heading reveal" data-parallax="0.04">
+          <div class="section-heading reveal" data-parallax="0.03">
             <p class="eyebrow">What I Do</p>
             <h2>我更擅长把“业务复杂度”变成“可复用能力”</h2>
           </div>
@@ -145,7 +172,7 @@
         </section>
 
         <section class="section" id="projects">
-          <div class="section-heading reveal" data-parallax="0.03">
+          <div class="section-heading reveal" data-parallax="0.02">
             <p class="eyebrow">Selected Work</p>
             <h2>项目精选</h2>
           </div>
@@ -250,7 +277,7 @@
             </div>
           </div>
 
-          <div class="experience-panel reveal" id="experience" data-parallax="0.03">
+          <div class="experience-panel reveal" id="experience" data-parallax="0.02">
             <div class="section-heading">
               <p class="eyebrow">Timeline</p>
               <h2>工作经历</h2>

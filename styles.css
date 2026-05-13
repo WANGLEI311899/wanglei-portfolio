@@ -400,28 +400,6 @@ a {
   perspective: 1600px;
 }
 
-.hero-canvas,
-.stage-wireframe-glow {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-}
-
-.hero-canvas {
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.92;
-}
-
-.stage-wireframe-glow {
-  z-index: 1;
-  background:
-    radial-gradient(circle at 74% 28%, rgba(121, 213, 255, 0.18), transparent 24%),
-    radial-gradient(circle at 38% 78%, rgba(255, 133, 89, 0.12), transparent 22%);
-  filter: blur(22px);
-}
-
 .stage-panel,
 .stage-card {
   position: absolute;
@@ -1014,11 +992,6 @@ a {
     width: auto;
     min-height: auto;
     transform: none !important;
-  }
-
-  .hero-canvas,
-  .stage-wireframe-glow {
-    inset: -4%;
   }
 
   .mini-card,
